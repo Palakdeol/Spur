@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fff"
+    android:padding="20dp"
+    tools:context="com.lenovo.spur.MainActivity_Next">
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:text="USER "
+        android:layout_centerInParent="true"
+        android:id="@+id/user"
+        android:layout_alignParentLeft="true"
+        android:onClick="user_click"
+        />
+
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:text="SERVICE PROVIDER"
+        android:layout_centerInParent="true"
+        android:layout_alignParentRight="true"
+        android:onClick="service_provider_click"
+        android:layout_below="@+id/user"
+        />
+
+
+
+
+
+
+
+</RelativeLayout>

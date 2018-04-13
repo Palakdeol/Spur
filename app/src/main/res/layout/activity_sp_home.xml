@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fff"
+    tools:context="com.lenovo.spur.Sp_home">
+
+
+
+
+        <ImageView
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@drawable/menu_icon"
+            android:id="@+id/menu_icon"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_below="@id/menu_icon"
+        android:background="#000"
+        android:orientation="horizontal"
+        android:id="@+id/search_medicine">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:text="Search Medicine"
+            android:textColor="#fff"
+            android:textSize="20dp"
+            android:layout_centerInParent="true"
+            />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:src="@android:drawable/ic_menu_search"
+           android:layout_alignParentRight="true"
+
+            />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:orientation="horizontal"
+        android:layout_marginTop="20dp"
+        android:padding="10dp"
+        android:id="@+id/category_but"
+        android:layout_below="@+id/search_medicine">
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:background="#ccc"
+        android:padding="10dp"
+        android:id="@+id/btn_add_category"
+        android:text="Add new category"
+        android:onClick="add_new_category"
+
+        />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:background="#ccc"
+            android:text="View Order History"
+            android:padding="10dp"
+            android:layout_alignParentRight="true"
+
+            />
+
+
+
+
+    </RelativeLayout>
+
+
+<android.support.v7.widget.RecyclerView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_below="@+id/category_but"
+    android:layout_margin="10dp"
+    android:id="@+id/category_recycler">
+
+</android.support.v7.widget.RecyclerView>
+
+
+
+
+</RelativeLayout>

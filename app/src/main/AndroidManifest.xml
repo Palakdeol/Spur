@@ -2,6 +2,8 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.lenovo.spur">
 
+    <uses-permission android:name="android.permission.INTERNET" />
+
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
@@ -9,13 +11,27 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".MainActivity">
+        <activity android:name=".Sp_home">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity android:name=".MainActivity" />
+        <activity android:name=".Login" />
+        <activity android:name=".Signup" />
+        <activity android:name=".Service_provider" />
+        <activity android:name=".User_profile" />
+        <activity android:name=".MainActivity_Next" />
+        <activity android:name=".Sp_Login" />
+        <activity android:name=".Sp_Signup" />
+        <activity android:name=".First_activity" />
+        <activity android:name=".MainActivitySignup_Next" />
+        <activity android:name=".user_home_page" />
+        <activity android:name=".Sp_profile" />
+        <activity android:name=".Cab_booking" />
+        <activity android:name=".Sp_Add_Category"></activity>
     </application>
 
 </manifest>

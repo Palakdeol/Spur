@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fff"
+    android:orientation="vertical"
+    tools:context="com.lenovo.spur.Signup">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:src="@drawable/user_profile"
+        android:layout_marginTop="20dp"
+        />
+
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_centerInParent="true"
+            android:maxLines="1"
+            android:hint="Enter email"
+            android:paddingLeft="10dp"
+            android:background="@drawable/rounded_rectangle"
+            android:inputType="textEmailAddress"
+            android:imeOptions="actionNext"
+            android:textColorHint="#000"
+            android:textColor="#000"
+            android:id="@+id/email_txt"
+            android:layout_marginTop="20dp"
+            />
+
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_below="@+id/email_txt"
+            android:maxLines="1"
+            android:hint="Create Password"
+            android:textColor="#000"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/rounded_rectangle"
+            android:inputType="textPassword"
+            android:imeOptions="actionNext"
+            android:textColorHint="#000"
+            android:paddingLeft="10dp"
+            android:id="@+id/password_txt"/>
+
+
+    <EditText
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_below="@+id/email_txt"
+            android:maxLines="1"
+            android:hint="Confirm Password"
+            android:layout_marginTop="20dp"
+            android:inputType="textPassword"
+            android:textColor="#000"
+            android:paddingLeft="10dp"
+            android:background="@drawable/rounded_rectangle"
+            android:imeOptions="actionDone"
+            android:textColorHint="#000"
+            android:id="@+id/confirm_password_txt"/>
+
+
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/confirm_password_txt"
+        android:layout_marginTop="20dp"
+        android:text="SIGN UP"
+        android:background="@drawable/gradient"
+        android:onClick="signup_btn"
+        />
+
+
+</LinearLayout>

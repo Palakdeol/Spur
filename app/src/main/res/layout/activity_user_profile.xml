@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    android:background="#000"
+    tools:context="com.lenovo.spur.User_profile">
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="USER PROFILE"
+        android:textStyle="bold"
+        android:textAlignment="center"
+        android:textSize="40dp"
+        android:textColor="#fff"
+        />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="60dp"
+        android:orientation="vertical"
+        android:padding="10dp"
+        >
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:hint="First_name"
+            android:maxLines="1"
+            android:textColorHint="#fff"
+            android:textColor="#fff"
+            android:imeOptions="actionNext"
+            android:background="@drawable/rounded_rectangle"
+            android:textSize="20dp"
+            android:paddingLeft="10dp"
+            android:id="@+id/first_name"
+            />
+
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="20dp"
+            android:hint="Last_name"
+            android:textColor="#fff"
+            android:imeOptions="actionNext"
+            android:background="@drawable/rounded_rectangle"
+            android:maxLines="1"
+            android:paddingLeft="10dp"
+            android:id="@+id/Last_name"
+            android:textColorHint="#fff"
+            android:textSize="20dp"
+            />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="20dp"
+            android:hint="Address"
+            android:textColor="#fff"
+            android:id="@+id/Address"
+            android:imeOptions="actionNext"
+            android:textColorHint="#fff"
+            android:background="@drawable/rounded_rectangle"
+            android:textSize="20dp"
+            android:paddingLeft="10dp"
+            />
+
+
+        <RadioGroup
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/rounded_rectangle"
+            android:orientation="horizontal"
+            android:id="@+id/gender_radio_group"
+            >
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="MALE"
+                android:buttonTint="#fff"
+                android:textColor="#fff"
+                android:imeOptions="actionNext"
+                android:id="@+id/male_radio_btn"
+                />
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:text="FEMALE"
+                android:buttonTint="#fff"
+                android:textColor="#fff"
+                android:id="@+id/female_radio_btn"
+                android:imeOptions="actionNext"/>
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="OTHERS"
+                android:id="@+id/others_radio_btn"
+                android:textColor="#fff"
+                android:buttonTint="#fff"
+                android:imeOptions="actionNext"/>
+
+
+        </RadioGroup>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:background="@drawable/rounded_rectangle"
+            android:layout_marginTop="20dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:text="Blood Group"
+                android:paddingLeft="10dp"
+                android:gravity="center"
+                android:textColor="#fff"
+                android:id="@+id/blood_group"
+                android:imeOptions="actionNext"
+                android:textSize="20dp"/>
+
+            <Spinner
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:textAlignment="textEnd"
+                android:backgroundTint="#fff"
+                android:id="@+id/bg_spinner"/>
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:background="@drawable/rounded_rectangle"
+            android:layout_marginTop="20dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:text="Category"
+                android:paddingLeft="10dp"
+                android:gravity="center"
+                android:textColor="#fff"
+                android:id="@+id/category"
+                android:imeOptions="actionNext"
+                android:textSize="20dp"/>
+
+            <Spinner
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:textAlignment="textEnd"
+                android:backgroundTint="#fff"
+                android:id="@+id/category_spinner"/>
+
+
+        </LinearLayout>
+
+
+        </LinearLayout>
+
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Next"
+        android:onClick="next_btn"
+        android:background="#fff"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="30dp"
+        />
+
+    </RelativeLayout>
+

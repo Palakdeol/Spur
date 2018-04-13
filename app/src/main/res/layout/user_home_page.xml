@@ -1,0 +1,314 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fff"
+    android:id="@+id/drawer_layout"
+    tools:context="com.lenovo.spur.user_home_page">
+
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+    
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="#000"
+        android:id="@+id/linear_layout_user_homepage"
+        >
+
+        <ImageView
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@drawable/menu_icon"
+            android:onClick="menu_icon"
+
+            />
+
+
+    </LinearLayout>
+    
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="20dp"
+        android:id="@+id/relative_1"
+       android:layout_below="@id/linear_layout_user_homepage">
+
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/cab_booking"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:src="@drawable/cab"
+            app:civ_border_width="2dp"
+            app:civ_border_color="#FF000000"
+            android:layout_marginTop="10dp"
+            android:onClick="cab_booking"
+
+            />
+        <TextView
+            android:layout_width="150dp"
+            android:layout_height="50dp"
+            android:text="Cab_booking"
+            android:layout_below="@+id/cab_booking"
+            android:textColor="#000"
+            android:id="@+id/booking_txt"
+            android:textSize="20dp"
+            android:gravity="center"
+            
+            />
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/healthcare"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:src="@drawable/healthcare"
+            app:civ_border_width="2dp"
+            android:layout_alignParentRight="true"
+            app:civ_border_color="#FF000000"
+            android:layout_marginTop="10dp"
+            android:onClick="healthcare"
+
+            />
+
+        <TextView
+            android:layout_width="150dp"
+            android:layout_height="50dp"
+            android:text="Healthcare"
+            android:textColor="#000"
+            android:gravity="center"
+            android:id="@+id/health_txt"
+            android:layout_below="@+id/healthcare"
+            android:layout_alignParentRight="true"
+            android:textSize="20dp"/>
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="20dp"
+        android:layout_below="@+id/relative_1"
+        android:layout_centerInParent="true">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/online_billing"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:src="@drawable/online_payment"
+            app:civ_border_width="2dp"
+            app:civ_border_color="#FF000000"
+            android:layout_marginTop="10dp"
+            android:onClick="Bill_payment"
+
+            />
+
+        <TextView
+            android:layout_width="150dp"
+            android:layout_height="50dp"
+            android:text="Bill_payment"
+            android:layout_below="@+id/online_billing"
+            android:textColor="#000"
+            android:id="@+id/billing_txt"
+            android:textSize="20dp"
+            android:gravity="center"
+
+            />
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/chatting"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:src="@drawable/chatting"
+            app:civ_border_width="2dp"
+            app:civ_border_color="#FF000000"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="10dp"
+            android:onClick="chatting"/>
+
+        <TextView
+            android:layout_width="150dp"
+            android:layout_height="50dp"
+            android:text="Chatting"
+            android:textColor="#000"
+            android:gravity="center"
+            android:layout_below="@+id/chatting"
+            android:layout_alignParentRight="true"
+            android:textSize="20dp"/>
+    </RelativeLayout>
+
+
+
+</RelativeLayout>
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:background="#ccc"
+        android:layout_gravity="left"
+
+
+        >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:padding="10dp"
+            android:id="@+id/relative_drawer"
+            android:background="#000"
+
+            >
+            <de.hdodenhof.circleimageview.CircleImageView
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/dummy_image"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:src="@drawable/dummy_image"
+                app:civ_border_width="2dp"
+                app:civ_border_color="#FF000000"
+                android:layout_marginTop="10dp"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="My Account"
+                android:layout_centerInParent="true"
+                android:textColor="#fff"
+                android:textSize="20dp"/>
+        </RelativeLayout>
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:orientation="horizontal"
+            android:layout_marginTop="20dp"
+
+            >
+
+            <ImageView
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:src="@drawable/user_profile_copy"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:text="Edit Profile"
+                android:onClick="edit_profile"
+                android:textColor="#000"
+                android:textSize="20dp"
+                android:paddingLeft="20dp"
+                />
+
+        </LinearLayout>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#000"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="20dp"
+            android:orientation="horizontal"
+            >
+
+            <ImageView
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:src="@drawable/user_profile_copy"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:text="View Order History"
+                android:onClick="view_order_history"
+                android:textColor="#000"
+                android:textSize="20dp"
+                android:paddingLeft="20dp"
+                />
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#000"/>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="20dp"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:src="@drawable/user_profile_copy"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:text="Feedback"
+                android:onClick="feedback"
+                android:textColor="#000"
+                android:textSize="20dp"
+                android:paddingLeft="20dp"
+                />
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#000"/>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="20dp"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:src="@drawable/user_profile_copy"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:text="Log Out"
+                android:onClick="log_out"
+                android:textColor="#000"
+                android:paddingLeft="20dp"
+                android:textSize="20dp"
+                />
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#000"/>
+
+
+
+    </LinearLayout>
+
+</android.support.v4.widget.DrawerLayout>
